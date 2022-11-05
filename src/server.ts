@@ -3,6 +3,6 @@ const express = require('express');
 
 const app: Express = express();
 
-app.use((req, res) => res.send('nodemon ts-node').end());
+require('./api/routes/index.routes')(app); // routes
 
 app.listen(process.env.PORT ?? 5000);
