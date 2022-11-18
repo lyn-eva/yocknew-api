@@ -16,6 +16,7 @@ model User {
   email        String
   pwd          String
   img          String?
+  confirmed    Boolean  @default(false)
   createdAt    DateTime @default(now())
   lastLoggedIn DateTime @default(now())
   items        Item[]

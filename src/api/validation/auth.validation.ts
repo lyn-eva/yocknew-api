@@ -15,3 +15,5 @@ const schema = z
     pwd: z.string(),
   })
   .strict();
+
+export type User = z.infer<typeof schema>;

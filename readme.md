@@ -1,6 +1,7 @@
 ## Learning Objective
 
 - api versioning
+- sending emails
 - schema validating
 - rest design
 - nosql(mongodb) databases
