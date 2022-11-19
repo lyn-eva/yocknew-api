@@ -3,7 +3,13 @@ const express = require('express');
 
 const app: Express = express();
 
+const corOptions = {
+  credentials: true,
+  origin: true,
+};
+
 require('dotenv').config(); // load envirnmental variables
+app.use(require('cors')(corOptions)); // resolve cors
 app.use(express.json()); // parse JSON body
 
 require('./api/routes/index.route')(app); // routes

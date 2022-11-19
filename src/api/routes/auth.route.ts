@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import {
-  confirmRegisteration,
+  confirmAccRegiseration,
   deleteAcc,
   loginAcc,
   logoutAcc,
@@ -17,7 +17,7 @@ router.delete('/logout', logoutAcc);
 
 router.delete('/resign', deleteAcc);
 
-router.get('/confirm/:id', confirmRegisteration);
+router.get('/confirm', confirmAccRegiseration);
 
 router.put('/forgot-pwd', (req, res) => {
   // reset password
