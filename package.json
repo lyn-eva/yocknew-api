@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon src/server.ts"
+    "dev": "npx prisma generate --schema=./src/prisma/schema.prisma && nodemon src/server.ts"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +19,7 @@
     "jsonwebtoken": "^8.5.1",
     "nodemailer": "^6.8.0",
     "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
     "zod": "^3.19.1"
   },
   "devDependencies": {

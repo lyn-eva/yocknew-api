@@ -65,3 +65,5 @@ export const loginAcc: Handler = (req, res) => {
 export const logoutAcc: Handler = (req, res) => {
   res.end();
 };
+
+// who wrote this garbage?
